@@ -20,7 +20,7 @@ def reprojection_error(Pose_Trans,Pos_world,Internal_ref,GT):
     reprojection_loss=loss.sqrt().item()
     return reprojection_loss
 
-def angel_error(Pose_Trans,Pos_world,Internal_ref,GT):
+def angle_error(Pose_Trans,Pos_world,Internal_ref,GT):
     'Pose_Trans：Tcw,，4×4; Pos_world:3×1；Inter_ref:内参,3×3；GT:2×1;均为tensor类型'
     Focal_len=Internal_ref[0][0]
     R=Pose_Trans[0:3,0:3]
@@ -38,9 +38,9 @@ def angel_error(Pose_Trans,Pos_world,Internal_ref,GT):
     k=dk / Dk
     loss=(k*Pos_Cam)-GT_Back2F
     loss=(loss.pow(2)).sum()
-    angel_loss=loss.sqrt()
-    angel_loss=angel_loss.item()
-    return angel_loss
+    angle_loss=loss.sqrt()
+    angle_loss=angel_loss.item()
+    return angle_loss
 
 def end_iter_thresh(TMat1,TMat2):
     '均为tensor，控制Ransac算法最后停止迭代'
