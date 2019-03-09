@@ -3,7 +3,7 @@ Reproduction and revision of solvePnPRansac algorithm
 
 ## Purpose<br>
 1. This program is used in a project in my lab.<br><br>
-2. In this project, we change the PnPRansac algorithm and make it finishing iteration only when the current Rotation Matrix or Translation Vector has little change with last Rotation Matrix or Translation Vector no more than a threshold which can be set by user freely rather than finishing iteration when the algorithm reach the iteration times.<br><br>
+2. **In this project, we change the PnPRansac algorithm and make it finishing iteration only when the current Rotation Matrix or Translation Vector has little change with last Rotation Matrix or Translation Vector no more than a threshold which can be set by user freely rather than finishing iteration when the algorithm reach the iteration times.**<br><br>
 
 ## Notice<br>
 1. In our project this program is put in a neural network latter so the type of many variables is torch.Tensor(). In the program the input can be numpy.array() or t.Tensor(). But if you only use numpy.array(), you'd better to delete the related t.Tensor() variable for coding's efficiency.<br><br>
