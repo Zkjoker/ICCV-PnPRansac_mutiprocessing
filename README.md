@@ -19,9 +19,9 @@ Reproduction and revision of solvePnPRansac algorithm
 4. The transform matrices in 1.txt and 2.txt are Twc, which means:Pw=Twc·Pc, Pw is the world coordinate and Pc is the camera coordinate. <br><br>
 
 ### ReDefineError.py<br>
-In this file there are three functions.They compute the reprojection error,angel error,and the difference between two transform matrix. Angel error never be used in all files. Of course you can try to use it to replace the reprojection error. <br><br>
+In this file there are three functions.They compute the reprojection error,angle error,and the difference between two transform matrix. Angle error never be used in all files. Of course you can try to use it to replace the reprojection error. <br><br>
 
-angelerror=||(||f·K^(-1)·Pu||/||T·Pw||）·T·Pw -f·K^(-1)·Pu||, in this equation, f is focus length, K is camera matrix, Pw is world coordinate, Pu is image coordinate, "||" is F normal form. <br><br>
+angle error=||(||f·K^(-1)·Pu||/||T·Pw||）·T·Pw -f·K^(-1)·Pu||, in this equation, f is focus length, K is camera matrix, Pw is world coordinate, Pu is image coordinate, "||" is F normal form. <br><br>
 
 ## License
 For commercial use，please leave a message to let me know.
