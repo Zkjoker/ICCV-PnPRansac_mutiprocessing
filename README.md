@@ -2,7 +2,7 @@
 Reproduction and revision of solvePnPRansac algorithm
 
 ## Purpose<br>
-1. This program is used in a project in my lab.<br><br>
+1. This program is used in a project in my lab for a paper in ICCV. I will support the paper's link in the future.<br><br>
 2. **In this project, we change the PnPRansac algorithm and make it finishing iteration only when the current Rotation Matrix or Translation Vector has little change with last Rotation Matrix or Translation Vector no more than a threshold which can be set by user freely rather than finishing iteration when the algorithm reach the iteration times.**<br><br>
 
 ## Notice<br>
@@ -20,6 +20,8 @@ Reproduction and revision of solvePnPRansac algorithm
 
 ### ReDefineError.py<br>
 In this file there are three functions.They compute the reprojection error,angel error,and the difference between two transform matrix. Angel error never be used in all files. Of course you can try to use it to replace the reprojection error. <br><br>
+
+angelerror=||(||f·K^(-1)·Pu||/||T·Pw||）·T·Pw -f·K^(-1)·Pu||, in this equation, f is focus length, K is camera matrix, Pw is world corrdinate, Pu is image corrdinate, "||" is F normal form. <br><br>
 
 ## License
 For commercial use，please leave a message to let me know.
