@@ -1,5 +1,5 @@
 # PnPRansac-mutiprocessing
-Reproduction and revision of solvePnPRansac algorithm
+Reproduction and revision of solvePnPRansac algorithm（solvePnPRansac算法的复现与修改）
 
 ## Purpose<br>
 1. This program is used in a project in my lab.<br><br>
