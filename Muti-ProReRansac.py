@@ -3,7 +3,7 @@ import torch as t
 import multiprocessing as mp
 import cv2
 import random
-from ReDefineError import angel_error
+from ReDefineError import angle_error
 from ReDefineError import reprojection_error
 from ReDefineError import end_iter_thresh
 
